@@ -6,9 +6,3 @@ __pycache__/
 logs/
 data/
 archive/
-
-
-git remote add origin https://github.com/tohver/RAG-with-Knowledge-Graph-for-10-K-forms.git
-git branch -M main
-git push -u origin main
-
