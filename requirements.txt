@@ -3,4 +3,5 @@ langchain>=0.3.0
 langchain-community
 langchain-openai
 langchain-text-splitters
+streamlit
 python-dotenv

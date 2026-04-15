@@ -40,7 +40,7 @@ Standard RAG retrieves chunks by vector similarity alone — each chunk is treat
 
 1. Add your `OPENAI_API_KEY` to the `.env` file.
 
-2. Place your 10-K JSON file under `./forms/`. Update `FORM_FILE` in `main.py` if needed.
+2. Place your 10-K JSON file under `./forms/`. Update `FORM_FILE` in `config.py` if needed.
 
 3. Start all services (Python app + Neo4j with APOC and GenAI plugins):
 
@@ -49,6 +49,18 @@ docker compose up --build
 ```
 
 The pipeline will connect to Neo4j, build the graph, generate embeddings, and print an answer to the configured question. Neo4j Browser is available at `http://localhost:7474` for inspecting the graph.
+
+## Streamlit UI
+
+A simple Streamlit interface is available for asking natural-language questions against the ingested 10-K graph.
+
+Run it with:
+
+```bash
+streamlit run streamlit_app.py --server.port 8501 --server.address 0.0.0.0
+```
+
+Then open `http://localhost:8501` in your browser.
 
 ## Graph structure
 

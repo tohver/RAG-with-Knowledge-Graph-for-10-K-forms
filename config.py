@@ -39,3 +39,5 @@ VECTOR_EMBEDDING_PROPERTY = "textEmbedding"
 # ── Form 10-K processing ───────────────────────────────────────────────────
 FORM_10K_ITEMS = ["item1", "item1a", "item7", "item7a"]
 MAX_CHUNKS_PER_ITEM = 20
+FORM_FILE = "./forms/0001564708-23-000368.json"
+FORM13_FILE = "./data/form13.csv"
